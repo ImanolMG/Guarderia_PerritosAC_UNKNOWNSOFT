@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path
 from preregistro.views import pagina_principal
 urlpatterns = [
-    path('home/', pagina_principal),
+    path('', pagina_principal),
     path('admin/', admin.site.urls),
 ]
