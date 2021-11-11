@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILES_DIRS = ['templates/assets']
 
 # Application definition
 
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'Guarderia_PerritosAC_UNKNOWNSOFT.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [BASE_DIR / 'templates/html']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
