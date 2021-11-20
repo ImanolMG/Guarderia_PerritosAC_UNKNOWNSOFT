@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body id="body">
-<div>
+<div id="principal-body">
     <header>
         <nav class="navbar navbar-expand-lg  ">
             <!--navbar-light -->
@@ -31,55 +31,68 @@
         <a class="nav-link col-5" href="#">Nosotros</a>
         <a class="nav-link col-6" href="#">Habitaciones</a>
         <a class="nav-link active "  href="#">Preregistro</a>
-
-
       </div>
     </div>
   </div>
 </nav>
     </header>
-    <div id="centro-home">
-        <img  id="imagen-fondo-perro" src="https://cdn.discordapp.com/attachments/908140845306355783/911496273012609075/pexels-photo-3198004.png">
+    <section id="centro-home">
+       <img  id="imagen-fondo-perro" src="https://cdn.discordapp.com/attachments/908140845306355783/911496273012609075/pexels-photo-3198004.png">
        <div id="welcome-part">
            <h1>Bienvenidos</h1>
            <button id="boton-principal" type="button">⬇ Mas de nosotros ⬇</button>
        </div>
+             <div>
+                 <h1>Habra mas contenedores para mostrar info</h1>
+             </div>
+    </section>
+
+
+
+
+     <footer>
+    <div id="block-footer">
+        <div id="mas-info-footer"> Aqui podria haber mas info para el footer </div>
+        <div id="info-final-footer" >
+            <h2>Perritos A.C. </h2>
+            <label>Veterinaria Perritos A.C. v1</label>
+        <label id="nombre-empresa" type="button" href="#">Unknownsoft 2021</label>
+        </div>
+
     </div>
 
-    <footer>
-<div>
-    <div>
-     <label id="ejemplo-one"> xd </label>
-    </div>
-    <label> </label>
-</div>
     </footer>
-
-
 </div>
 
 </body>
 
+
 <style>
+
+    #principal-body{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 #body{
-
-
-}
-#centro-home {
-    position: absolute;
-width: 100%;
-    height: 100%;
-
-}
-#imagen-fondo-perro{
     position: absolute;
     width: 100%;
-    height: 125%;
+    height: 100%;
+}
+
+#centro-home {
+width: 100%;
+height: 1000px;
+}
+#imagen-fondo-perro{
+
+    width: 100%;
+    height: 800px;
     filter: brightness(50%);
 }
 #welcome-part {
     position:absolute;
-    top: 50%;
+    top: 375px;
     right: 40%;
     color: white;
 
@@ -110,6 +123,28 @@ width: 100%;
     height: 45px;
     color: white;
     border-color: #000E55;
+}
+
+#block-footer{
+    background-color: #2B2B2B;
+    width: 100%;
+    height: 320px;
+
+}
+#mas-info-footer{
+    color: white;
+    width: 100%;
+    height: 250px;
+}
+#info-final-footer{
+    color: white;
+    width: 100%;
+    height: 70px;
+}
+
+#nombre-empresa{
+    position: absolute;
+    right: 3%;
 }
 
 </style>
