@@ -1,44 +1,95 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Guarderia Perritos AC</title>
-    {% load static %}
-    <link href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css">
-    <link href="  {% static 'css/bootstrap-responsive.css' %} " rel="stylesheet"  />
-    <!-- CSS online -->
+<!-- NO Funciona los estilos mas sin embargo el codigo css lo puse abajo del html -->
+
+   <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" >
+    <link href="{% static '../css/bootstrap-responsive.css' %}" rel="stylesheet"  /> -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body>
+<body id="body">
 <div>
-    <header >
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+    <header>
+        <nav class="navbar navbar-expand-lg  ">
+            <!--navbar-light -->
   <div class="container-fluid">
   <a class="navbar-brand" href="#">
-      <img src="https://cdn.discordapp.com/attachments/908140845306355783/908141635953635328/PicsArt_09-11-05.12.34.png" alt="" width="85" height="75" class="d-inline-block align-text-top">
-      Perritos AC
+      <img src="https://cdn.discordapp.com/attachments/908140845306355783/908141635953635328/PicsArt_09-11-05.12.34.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        <a class="nav-link" href="#">Nosotros</a>
+          <h3> Perritos A.C.</h3>
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        <a class="nav-link " href="#">Nosotros</a>
         <a class="nav-link" href="#">Habitaciones</a>
-        <a class="nav-link disabled">Preregistro</a>
+        <a class="nav-link active ">Preregistro</a>
+
+
       </div>
     </div>
   </div>
 </nav>
     </header>
+    <div id="centro-home">
+        <img  id="imagen-inicio" src="https://cdn.discordapp.com/attachments/908140845306355783/911496273012609075/pexels-photo-3198004.png">
+       <div id="welcome-part">
+           <h1>Bienvenidos</h1>
+       </div>
+    </div>
 
     <footer>
-
+<div>
+    <div>
+     <label id="ejemplo-one"> xd </label>
+    </div>
+    <label> </label>
+</div>
     </footer>
 
 
 </div>
 
 </body>
+
+<style>
+#body{
+
+
+}
+#centro-home {
+    position: absolute;
+width: 100%;
+    height: 100%;
+
+}
+#imagen-inicio{
+       position: absolute;
+    width: 100%;
+    height: 125%;
+    filter: brightness(50%);
+}
+#welcome-part {
+    position:absolute;
+    top: 50%;
+    right: 40%;
+    color: white;
+
+}
+.navbar{
+    background-color: #000E55;
+    color: white;
+
+}
+
+
+
+</style>
 </html>
