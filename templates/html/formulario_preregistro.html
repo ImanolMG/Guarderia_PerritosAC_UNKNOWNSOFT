@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preregistro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+
+{%  block content %}
+    <div>
+    <section id="area_preregistro">
+        <div> <h5> Agende su habitacion </h5> </div>
+        <section id="lema-empresa">
+            <img  id="icono-hueso" src="https://cdn.discordapp.com/attachments/908140845306355783/912102957942714388/unknown.png "  >
+        <div id="lema-texto">
+            <label>Nosotros somos una excelente opcion para poder cuidar de tu Amigo cuando no estás en casa, dejalo en una habitacion como lo tienes acostumbrado</label>
+        </div>
+
+        </section>
+              <div id="line-separador"> <label>------------------------------------------------------------------------------------------------------------------------------------</label> </div>
+        <div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Nombre del dueño</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+          <div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Raza de mascota</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+        <div class="form-check form-check-inline mb-3">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Perro</label>
+</div>
+<div class="form-check form-check-inline mb-3">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">Gato</label>
+</div>
+
+        <div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Numero telefonico</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+        <div id="seleccionar-hab"> <div id="texto-seleccionar-hab">
+    <label >Seleccione una habitacion</label>
+</div>
+ </div>
+
+<div id="opcion-economico">
+      <div><label>Economico</label>  </div>
+  <img id="imagen-economico" src="https://cdn.discordapp.com/attachments/908140845306355783/912091617555533884/c10ff670f723b65317cb5588f48b8cae.png" >
+     <div class="form-check form-check-inline mb-3">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Seleccionar</label>
+</div>
+</div>
+
+<div id="opcion-normal">
+          <div><label>Normal</label>  </div>
+  <img id="imagen-normal" src="https://cdn.discordapp.com/attachments/908140845306355783/912092776827605032/CANIL2_1.png" >
+<div class="form-check form-check-inline mb-3">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">Seleccionar</label>
+</div>
+     </div>
+
+        <div id="opcion-vip">
+      <div><label>VIP</label>  </div>
+  <img id="imagen-vip" src="https://cdn.discordapp.com/attachments/908140845306355783/912099021554876446/unknown.png"  >
+<div class="form-check form-check-inline mb-3">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">Seleccionar</label>
+</div>
+            </div>
+           <div>
+           <button id="boton-principal" type="button">Confirmar</button>
+       </div>
+
+
+    </section>
+
+    </div>
+{% endblock %}
+
+</body>
+
+<style>
+#area_preregistro{
+    position: absolute;
+    background-color: #CCF6FF;
+    width: 850px;
+    height: 700px;
+    top: 50px;
+    left: 20%;
+
+}
+#opcion-economico{
+    position: absolute;
+
+    left: 75px;
+    width: 200px;
+    height: 200px;
+}
+#imagen-economico{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+#opcion-normal{
+    position: absolute;
+
+    left: 325px;
+    width: 200px;
+    height: 200px;
+}
+#imagen-normal{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+#opcion-vip{
+    position: absolute;
+
+    left: 575px;
+    width: 200px;
+    height: 200px;
+}
+#imagen-vip{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+#icono-hueso{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 20px;
+
+}
+#lema-empresa{
+
+    width: 100%;
+    height: 100px;
+}
+#lema-texto{
+    position: absolute;
+
+    left: 150px;
+    width: 650px;
+    top: 55px;
+}
+#line-separador{
+    width: 100%;
+    height: 40px;
+}
+
+#seleccionar-hab{
+
+    width: 100%;
+    height: 40px;
+}
+#texto-seleccionar-hab{
+    position: absolute;
+    left: 350px;
+
+}
+
+#boton-principal{
+    position: absolute;
+    background-color: #000E55;
+    border-radius: 15px 15px;
+    width: 225px;
+    height: 45px;
+    color: white;
+    border-color: #000E55;
+    top: 650px;
+    left: 70%;
+}
+
+
+</style>
+</html>

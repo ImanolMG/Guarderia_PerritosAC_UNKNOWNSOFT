@@ -6,3 +6,8 @@ from django.conf import settings
 
 def pagina_principal (request):
     return render(request, "home.html")
+
+def formulario_preregistro (request):
+    return render(request, "formulario_preregistro.html")
+
+

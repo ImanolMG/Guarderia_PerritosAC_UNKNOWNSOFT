@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from preregistro.views import pagina_principal
+from preregistro.views import pagina_principal, formulario_preregistro
 urlpatterns = [
     path('', pagina_principal),
+    path('preregistro/', formulario_preregistro),
     path('admin/', admin.site.urls),
 ]
