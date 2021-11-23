@@ -35,12 +35,51 @@
  {% block content%} {% endblock %}
   <footer>
     <div id="block-footer">
-        <div id="mas-info-footer"> Aqui podria haber mas info para el footer </div>
-        <div id="info-final-footer" >
-            <h2>Perritos A.C. </h2>
-            <label>Veterinaria Perritos A.C. v1</label>
-        <label id="nombre-empresa" type="button" href="#">Unknownsoft 2021</label>
-        </div>
+        <div id="mas-info-footer">
+            <div class="container py-3">
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+          <img src="https://cdn.discordapp.com/attachments/908140845306355783/908141635953635328/PicsArt_09-11-05.12.34.png" width="40" height="40" class="d-block me-2" viewBox="0 0 118 94" role="img"></img>
+          <span class="fs-5" style="color: white">Perritos A.C.</span>
+        </a>
+        <ul class="list-unstyled small text-muted">
+          <li class="mb-2">Nosotros somos una excelente opcion para poder cuidar de tu Amigo cuando no estás en casa, dejalo en una habitacion como lo tienes acostumbrado</li>
+            <li class="mb-2" type="button" href="#">Unknownsoft 2021</li>
+          <li class="mb-2">Guarderia Perritos A.C. v1</li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3 offset-lg-1 mb-3">
+        <h5>Menu</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="/">Home</a></li>
+          <li class="mb-2"><a href="#">Nosotros</a></li>
+          <li class="mb-2"><a href="#">Habitaciones</a></li>
+          <li class="mb-2"><a href="/preregistro/">Preregistro</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3 mb-3">
+        <h5>Habitaciones</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a >Economico $50 MX</a></li>
+          <li class="mb-2"><a >Normal $100 MX</a></li>
+          <li class="mb-2"><a >VIP $150 MX</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Contacto</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#"><img src="https://cdn.discordapp.com/attachments/908140845306355783/912505358004670495/281769.png" width="30" height="30">perritos@gmail.com</a></li>
+          <li class="mb-2"><a ><img src="https://cdn.discordapp.com/attachments/908140845306355783/912507683775594506/f207045d96c258fed664305f0ac2c5bd-icono-de-auricular-de-telefono-azul.png" width="35" height="35"> 96112355552</a></li>
+          <li class="mb-2"><a ><img src="https://cdn.discordapp.com/attachments/908140845306355783/912504723511312414/172-1725552_facebook-logo-png.png" width="35" height="35"> Perritos A.C.</a></li>
+          <li class="mb-2"><a ><img src="https://cdn.discordapp.com/attachments/908140845306355783/912503938899640371/580b57fcd9996e24bc43c521.png" width="35" height="35"> Perritos A.C.</a></li>
+          <li class="mb-2"><a ><img src="https://cdn.discordapp.com/attachments/908140845306355783/912506118532653066/twitter-logo-6.png" width="35" height="35"> Perritos A.C.</a></li>
+        </ul>
+      </div>
+    </div>
+  </div> </div>
+
 
     </div>
 
@@ -70,7 +109,7 @@
 #block-footer{
     background-color: #2B2B2B;
     width: 100%;
-    height: 320px;
+    height: 325px;
 
 }
 #mas-info-footer{
@@ -78,16 +117,7 @@
     width: 100%;
     height: 250px;
 }
-#info-final-footer{
-    color: white;
-    width: 100%;
-    height: 70px;
-}
 
-#nombre-empresa{
-    position: absolute;
-    right: 3%;
-}
 
 </style>
 </html>

@@ -21,7 +21,17 @@ def registrar_cliente (request):
     tipo_habitacion = request.POST['tipohabitacion']
 
     cliente = Clientes.objects.create(
-        nombre=nombre, raza_mascota= raza_mascota, tipomascota= tipomascota, telefono = telefono, tipo_habitacion = tipo_habitacion
+        nombre=nombre, raza_mascota=raza_mascota, tipomascota= tipomascota, telefono = telefono, tipo_habitacion = tipo_habitacion
     )
-    messages.success(request, 'Tus datos han sido registrados exitosamente, espera nuestra respuesta')
+    messages.success(request, 'Tus datos han sido registrados exitosamente, pronto de contactaremos :)')
     return redirect('/preregistro/')
+
+
+def administracion_clientes (request):
+    lista_preregistros = Clientes.objects.all()
+    return render(request, "administracion.html" , {"clientes":lista_preregistros})
+
+def eliminar_cliente (request, id):
+    cliente = Clientes.objects.get(id=id)
+    cliente.delete()
+    return redirect('/administracion/')

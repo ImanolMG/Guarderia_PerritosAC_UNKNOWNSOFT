@@ -23,9 +23,52 @@
            <h1>Bienvenidos</h1>
            <button id="boton-principal" type="button">⬇ Mas de nosotros ⬇</button>
        </div>
-             <div>
-                 <h1>Habra mas contenedores para mostrar info</h1>
+             <div id="info-empresa">
+                 <div id="contenedor-info-empresa">
+             <p align="center" style="background-color: #CCF6FF; border-radius: 15px">Nosotros somos la mejor opcion para cuidar a tu mascota ya que te ofrecemos el mejor sevicio de guarderia</p>
+                 <h6 align="center" style="background-color: #CCF6FF ;  border-radius: 15px">Horarios</h6>
+                  <h6 align="center" style="background-color: #CCF6FF ;  border-radius: 15px">lunes a sábado: 9 am - 8 pm</h6>
+                   <button type="button" style="position: absolute; background-color: #000E55;  border-radius: 15px 15px;  width: 300px;height: 45px;color: white; border-color: #000E55; left: 100px">⬇ Ver habitaciones y costos ⬇</button>
+          </div>
              </div>
+
+        <div id="habitaciones-guarderia">
+         <h5 >Contamos con 15 habitaciones de tamaño chico, 10 medianas y 5 grandes</h5>
+              <h6>Con diferentes costos dependiendo el tipo de habitacion que eligas!!</h6>
+
+            <div id="opcion-economico">
+   <div><h5>Economico</h5>
+          <h6>Precio: $50 MX </h6> </div>
+  <img id="imagen-economico" src="https://cdn.discordapp.com/attachments/908140845306355783/912091617555533884/c10ff670f723b65317cb5588f48b8cae.png" >
+                <p>Incluye</p>
+               <p>Agua </p>
+                <p>Croquetas</p>
+</div>
+
+<div id="opcion-normal">
+          <div><h5>Normal</h5>
+          <h6>Precio: $100 MX </h6> </div>
+  <img id="imagen-normal" src="https://cdn.discordapp.com/attachments/908140845306355783/912092776827605032/CANIL2_1.png" >
+     <p>Incluye</p>
+               <p>Agua </p>
+                <p>Croquetas</p>
+    <h6>+Alfonbra</h6>
+
+     </div>
+
+        <div id="opcion-vip">
+      <div>   <div><h5>VIP</h5>
+          <h6>Precio: $150 MX </h6> </div> </div>
+  <img id="imagen-vip" src="https://cdn.discordapp.com/attachments/908140845306355783/912099021554876446/unknown.png">
+          <p>Incluye</p>
+               <p>Agua </p>
+                <p>Croquetas</p>
+    <h6>+Alfonbra</h6>
+              <h6>+Juguetes y mas</h6>
+
+            </div>
+
+        </div>
     </section>
 
 </div>
@@ -37,7 +80,7 @@
 
 #centro-home {
 width: 100%;
-height: 1000px;
+height: 1450px;
 }
 #imagen-fondo-perro{
 
@@ -64,8 +107,70 @@ height: 1000px;
     color: white;
     border-color: #000E55;
 }
+#info-empresa{
+    background-image: url("https://cdn.discordapp.com/attachments/908140845306355783/912574256993435678/pet-paw-vector-seamless-pattern-with-flat-icons-black-white-color-vector-id1198380858.png");
+    width: 100%;
+    height: 200px;
+}
+
+#contenedor-info-empresa{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    left: 450px;
+
+}
+#habitaciones-guarderia{
+
+    background-color: #CCF6FF;
+    width: 100%;
+    height: 450px;
+}
 
 
+#opcion-economico{
+     position: absolute;
+    color: white ;
+    background-color: #000E55;
+    border-radius: 15px;
+    left: 250px;
+    width: 200px;
+    height: 390px;
+}
+#imagen-economico{
+
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+#opcion-normal{
+    position: absolute;
+    color: white ;
+    background-color: #000E55;
+    border-radius: 15px;
+    left: 550px;
+    width: 200px;
+    height: 390px;
+}
+#imagen-normal{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+#opcion-vip{
+    position: absolute;
+    color: white ;
+    background-color: #000E55;
+    border-radius: 15px;
+    left: 850px;
+    width: 200px;
+    height: 390px;
+}
+#imagen-vip{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
 
 </style>
 {% endblock %}
