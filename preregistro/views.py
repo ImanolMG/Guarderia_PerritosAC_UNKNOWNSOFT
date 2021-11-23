@@ -7,10 +7,10 @@ from .models import Clientes
 
 
 def pagina_principal (request):
-    return render(request, "home.html")
+    return render(request, "home.html", {"titulo":"Guarderia Perritos AC"})
 
 def formulario_preregistro (request):
-    return render(request, "formulario_preregistro.html")
+    return render(request, "formulario_preregistro.html", {"titulo":"Preregistro"})
 
 
 def registrar_cliente (request):

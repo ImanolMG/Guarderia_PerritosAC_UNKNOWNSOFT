@@ -42,7 +42,6 @@
                                     <th>Mascota</th>
                                     <th>Raza de la mascota</th>
                                     <th>Tipo de habitacion</th>
-                                    <th>Editar</th>
                                     <th>Eliminar</th>
                                 </tr>
                                 </thead>
@@ -54,9 +53,6 @@
                                     <td><h6>{{ c.tipomascota }}</h6> </td>
                                     <td ><label style="color: #000E55">{{ c.raza_mascota }}</label></td>
                                     <td > <h6>{{ c.tipo_habitacion }} </h6>  </td>
-                                    <td>
-                                          <button type="button" class="btn btn-warning">Editar</button>
-                                    </td>
                                     <td >
                                         <a href="/eliminarcliente/{{c.id}}"  class="btn btn-danger">Eliminar</a>
                                     </td>

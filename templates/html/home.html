@@ -8,11 +8,24 @@
     <title>Guarderia Perritos AC</title>
 <!-- NO Funciona los estilos mas sin embargo el codigo css lo puse abajo del html -->
 
-   <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" >
+   <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/home.css'%}" >
     <link href="{% static '../css/bootstrap-responsive.css' %}" rel="stylesheet"  /> -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="{% static 'js/smooth-scroll.polyfills.min.js'%} "></script>
+ <script>
+      smoothScroll.init({
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+      speed: 2000, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+      callback: function ( anchor, toggle ) {} // Function to run after scrolling
+      });
+    </script>
+
 </head>
+
 {% block content%}
 
 <body id="body">
@@ -21,35 +34,37 @@
        <img  id="imagen-fondo-perro" src="https://cdn.discordapp.com/attachments/908140845306355783/911496273012609075/pexels-photo-3198004.png">
        <div id="welcome-part">
            <h1>Bienvenidos</h1>
-           <button id="boton-principal" type="button">⬇ Mas de nosotros ⬇</button>
+           <a data-scroll href="#info-empresa" id="boton-principal" type="button" class="nav-link">⬇ Acerca de nosotros ⬇</a>
        </div>
              <div id="info-empresa">
+   <img src="https://cdn.discordapp.com/attachments/908140845306355783/912090656799854622/El2Bhotel2Bpara2Bperros2Bm25C325A1s2Bgrande2Bdel2Bmundo.png" style="  width: 100%; height: 650px; filter: brightness(50%)">
                  <div id="contenedor-info-empresa">
-             <p align="center" style="background-color: #CCF6FF; border-radius: 15px">Nosotros somos la mejor opcion para cuidar a tu mascota ya que te ofrecemos el mejor sevicio de guarderia</p>
+             <p align="center" style="background-color: #CCF6FF; border-radius: 15px">Nosotros somos la mejor opcion para cuidar a tu mascota ya que te ofrecemos el mejor servicio de guarderia</p>
                  <h6 align="center" style="background-color: #CCF6FF ;  border-radius: 15px">Horarios</h6>
                   <h6 align="center" style="background-color: #CCF6FF ;  border-radius: 15px">lunes a sábado: 9 am - 8 pm</h6>
-                   <button type="button" style="position: absolute; background-color: #000E55;  border-radius: 15px 15px;  width: 300px;height: 45px;color: white; border-color: #000E55; left: 100px">⬇ Ver habitaciones y costos ⬇</button>
+                   <a id="boton-ver-habitaciones" data-scroll href="#habitaciones-guarderia" type="button" class="nav-link" >⬇ Ver habitaciones y costos ⬇</a>
           </div>
+
              </div>
 
         <div id="habitaciones-guarderia">
-         <h5 >Contamos con 15 habitaciones de tamaño chico, 10 medianas y 5 grandes</h5>
-              <h6>Con diferentes costos dependiendo el tipo de habitacion que eligas!!</h6>
+         <h3 align="center" >Contamos con 15 habitaciones de tamaño chico, 10 medianas y 5 grandes</h3>
+              <h4 align="center">Con diferentes costos dependiendo el tipo de habitacion que eligas!!</h4>
 
             <div id="opcion-economico">
-   <div><h5>Economico</h5>
-          <h6>Precio: $50 MX </h6> </div>
+   <div><h5 align="center">Economico</h5>
+          <h6 style="color: gold ; background-color: #000E55; border-radius: 5px">Precio: $50 MX x dia</h6> </div>
   <img id="imagen-economico" src="https://cdn.discordapp.com/attachments/908140845306355783/912091617555533884/c10ff670f723b65317cb5588f48b8cae.png" >
-                <p>Incluye</p>
+                <p align="center">Incluye:</p>
                <p>Agua </p>
                 <p>Croquetas</p>
 </div>
 
 <div id="opcion-normal">
-          <div><h5>Normal</h5>
-          <h6>Precio: $100 MX </h6> </div>
+          <div><h5 align="center">Normal</h5>
+          <h6 style="color: gold ; background-color: #000E55; border-radius: 5px" >Precio: $100 MX x dia </h6> </div>
   <img id="imagen-normal" src="https://cdn.discordapp.com/attachments/908140845306355783/912092776827605032/CANIL2_1.png" >
-     <p>Incluye</p>
+     <p align="center">Incluye:</p>
                <p>Agua </p>
                 <p>Croquetas</p>
     <h6>+Alfonbra</h6>
@@ -57,13 +72,13 @@
      </div>
 
         <div id="opcion-vip">
-      <div>   <div><h5>VIP</h5>
-          <h6>Precio: $150 MX </h6> </div> </div>
+      <div>   <div><h5 align="center">VIP</h5>
+          <h6 style="color: gold ; background-color: #000E55; border-radius: 5px" >Precio: $150 MX x dia </h6> </div> </div>
   <img id="imagen-vip" src="https://cdn.discordapp.com/attachments/908140845306355783/912099021554876446/unknown.png">
-          <p>Incluye</p>
+          <p align="center">Incluye:</p>
                <p>Agua </p>
                 <p>Croquetas</p>
-    <h6>+Alfonbra</h6>
+    <h6>+Alfombra</h6>
               <h6>+Juguetes y mas</h6>
 
             </div>
@@ -72,7 +87,7 @@
     </section>
 
 </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
 </body>
 
 
@@ -80,7 +95,7 @@
 
 #centro-home {
 width: 100%;
-height: 1450px;
+height: 2000px;
 }
 #imagen-fondo-perro{
 
@@ -102,15 +117,15 @@ height: 1450px;
 #boton-principal{
     background-color: #000E55;
     border-radius: 15px 15px;
+    font-size: 16px;
     width: 225px;
     height: 45px;
     color: white;
     border-color: #000E55;
 }
 #info-empresa{
-    background-image: url("https://cdn.discordapp.com/attachments/908140845306355783/912574256993435678/pet-paw-vector-seamless-pattern-with-flat-icons-black-white-color-vector-id1198380858.png");
     width: 100%;
-    height: 200px;
+    height: 650px;
 }
 
 #contenedor-info-empresa{
@@ -118,22 +133,33 @@ height: 1450px;
     width: 500px;
     height: 200px;
     left: 450px;
+    top: 950px;
 
 }
 #habitaciones-guarderia{
-
-    background-color: #CCF6FF;
+    background-image: url("https://cdn.discordapp.com/attachments/908140845306355783/912576510735581194/10796.jpg");
     width: 100%;
-    height: 450px;
+    height: 550px;
 }
 
+#boton-ver-habitaciones{
+    position: absolute;
+    background-color: #000E55;
+     font-size: 18px;
+    border-radius: 15px 15px;
+    width: 300px;
+    height: 45px;
+    color: white;
+    border-color: #000E55;
+    left: 100px
+}
 
 #opcion-economico{
      position: absolute;
-    color: white ;
-    background-color: #000E55;
+
+    background-image: url("https://cdn.discordapp.com/attachments/908140845306355783/912574256993435678/pet-paw-vector-seamless-pattern-with-flat-icons-black-white-color-vector-id1198380858.png");
     border-radius: 15px;
-    left: 250px;
+    left: 270px;
     width: 200px;
     height: 390px;
 }
@@ -145,10 +171,9 @@ height: 1450px;
 }
 #opcion-normal{
     position: absolute;
-    color: white ;
-    background-color: #000E55;
+    background-image: url("https://cdn.discordapp.com/attachments/908140845306355783/912574256993435678/pet-paw-vector-seamless-pattern-with-flat-icons-black-white-color-vector-id1198380858.png");
     border-radius: 15px;
-    left: 550px;
+    left: 570px;
     width: 200px;
     height: 390px;
 }
@@ -159,10 +184,9 @@ height: 1450px;
 }
 #opcion-vip{
     position: absolute;
-    color: white ;
-    background-color: #000E55;
+    background-image: url("https://cdn.discordapp.com/attachments/908140845306355783/912574256993435678/pet-paw-vector-seamless-pattern-with-flat-icons-black-white-color-vector-id1198380858.png");
     border-radius: 15px;
-    left: 850px;
+    left: 870px;
     width: 200px;
     height: 390px;
 }
